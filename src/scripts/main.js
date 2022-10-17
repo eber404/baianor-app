@@ -1,22 +1,3 @@
-/* import PocketBase from '../sdk/pocketbase/pocketbase.es.js'
-
-const client = new PocketBase('http://localhost:3333')
-
-async function main() {
-  const { admin, token } = await client.admins.authViaEmail(
-    'bodacamargo@gmail.com',
-    'q1w2e3r4t5'
-  )
-
-  client.records.getList('profile').then((r) => console.log(r.items))
-
-  const res = await client.settings.getAll()
-
-  console.log('res', res)
-}
-
-main() */
-
 $(document).ready(() => {
   console.log('document is loaded')
 
@@ -37,18 +18,15 @@ $(document).ready(() => {
 
     $('#content-container').append(content)
 
-    $(`#${name}.contentImage`).css(
-      'background-image',
-      `url(../images/${image})`
-    )
+    $(`#${name}.contentImage`).css('background-image', `url(/images/${image})`)
     $(`#${name}`).css('background-position', `center`)
     $(`#${name}`).css('background-size', `cover`)
     $(`#${name}`).hover(
       function () {
-        $(this).css('background-image', `url(../images/${image2})`)
+        $(this).css('background-image', `url(/images/${image2})`)
       },
       function () {
-        $(this).css('background-image', `url(../images/${image})`)
+        $(this).css('background-image', `url(/images/${image})`)
       }
     )
   }

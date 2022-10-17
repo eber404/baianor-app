@@ -1,7 +1,7 @@
 body {
     background-color: rgb(27, 27, 27);
     color: white;
-    background-image: url(../images/dust2.jpg); 
+    background-image: url(/images/dust2.jpg); 
     background-position: center;
     background-size: cover;
 }
