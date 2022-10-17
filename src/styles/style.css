@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    background-image: url(../images/dust2.jpg); 
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    
+}
+
+.contentImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.548);
+    
+}
+
+.contentImage:hover {
+    transform: scale(1.10);
+    transition: all 0.3s ease-in-out;
+}
