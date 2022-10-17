@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <title>Baianos Sobreviventes</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- <div id="content-container"></div> -->
+
+        <div class="content">
+            <div class="contentImage" id="marcos"></div>
+        </div>
+
+        <div class="content">
+            <div class="contentImage" id="lucas"></div>
+        </div>
+
+        <div class="content">
+            <div class="contentImage" id="eber"></div>
+        </div>
+
+        <div class="content">
+            <div class="contentImage" id="sixel"></div>
+        </div>
+
+        <div class="content">
+            <div class="contentImage" id="biel"> </div>
+        </div>
+    </div>
+
+    <script type="module">
+        $(document).ready(() => {
+            console.log('document is loaded')
+
+            const players = [
+                {name: 'marcos', image: 'marcos.jpg', image2: 'marcos2.jpg'},
+                {name: 'lucas', image: 'lucas.jpg', image2: 'lucas2.jpg'},
+                {name: 'eber', image: 'eber.jpg', image2: 'eber2.jpg'},
+                {name: 'sixel', image: 'sixel.jpg', image2: 'sixel2.jpg'},
+                {name: 'biel', image: 'biel.jpg', image2: 'biel2.jpg'},
+            ]
+
+            const renderContent = ({name, image, image2}) => {
+                const content = `
+                    <div class="content">
+                        <div class="contentImage" id="${name}"></div>
+                    </div>
+                `
+
+                $("#content-container").html(content)
+            }
+
+            players.forEach(({name, image, image2}) => renderContent({name, image, image2}))
+        })
+    </script>
+</body>
+</html>

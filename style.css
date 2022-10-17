@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    background-image: url(images/dust2.jpg); 
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    
+    margin-top: 200px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.content {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    
+}
+
+.contentImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.548);
+    
+}
+
+.contentImage:hover {
+    transform: scale(1.10);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+#marcos {
+    background-image: url(images/marcos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#marcos:hover {
+    background-image: url(images/marcos2.jpg);
+}
+
+
+
+
+
+#lucas {
+    background-image: url(images/lucas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#lucas:hover {
+    background-image: url(images/lucas2.jpg);
+}
+
+
+
+
+#eber {
+    background-image: url(images/eber.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#eber:hover {
+    background-image: url(images/eber2.jpg);
+}
+
+
+
+
+
+#sixel {
+    background-image: url(images/sixel.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#sixel:hover {
+    background-image: url(images/sixel2.jpg);
+}
+
+
+
+
+
+#biel {
+    background-image: url(images/biel.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#biel:hover {
+    background-image: url(images/biel2.jpg);
+}
