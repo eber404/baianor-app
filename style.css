@@ -1,6 +1,9 @@
 body {
     background-color: rgb(27, 27, 27);
     color: white;
+    background-image: url(images/dust2.jpg); 
+    background-position: center;
+    background-size: cover;
 }
 
 .container {
@@ -42,6 +45,11 @@ body {
     background-size: cover;
 }
 
+#marcos:hover {
+    background-image: url(images/marcos2.jpg);
+}
+
+
 
 
 
@@ -62,6 +70,10 @@ body {
     background-image: url(images/eber.jpg);
     background-position: center;
     background-size: cover;
+}
+
+#eber:hover {
+    background-image: url(images/eber2.jpg);
 }
 
 
@@ -89,5 +101,5 @@ body {
 }
 
 #biel:hover {
-    background-image: url(images/biel2.webp);
+    background-image: url(images/biel2.jpg);
 }
